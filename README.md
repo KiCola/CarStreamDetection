@@ -27,7 +27,9 @@
     * DarkLabel tracker2模式处理MOT（多目标跟踪）数据集很有用
     * 总共有18个视频场景，其中有些场景出现了别的场景都没有出现过的类别，只能将其划分入训练集。我保留了2个视频作为验证集/测试集，其余16个视频作为训练集，组织成yolo格式进行训练
     * 对视频每五帧抽帧获取最终数据集。由于各个类别之间差异较大，考虑对含有稀缺类别的视频帧进行逐帧识别，从而增加稀缺类别的训练数量
-
+    
+    ![img](file:////home/zero/.config/QQ/nt_qq_28f162e074e3b6696b99d325c66fda61/nt_data/Pic/2025-07/Ori/e277baa7c82cdc20cd1049a8fe3c21cc.jpg)
+  
 * 目标跟踪模型
 
   * 由于yolo自带byteTracking跟踪模型和botsort跟踪模型，我取用了byteTracking模型做目标跟踪。botsort也可以使用。
